@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "7c4db52e-5a9b-4f6f-9fef-d41412fa3e20",
+		"name": "EZ-Backend-Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41276421"
+	},
+	"item": [
+		{
+			"name": "Client-Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"adityapunia03@gmail.com\",\r\n    \"password\": \"clientpass@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/signup",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client-Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"adityapunia03@gmail.com\",\r\n    \"password\": \"clientpass@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ops-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"opsuser@example.com\",\r\n    \"password\": \"opspass123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "File-Upload-ops-user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyX3R5cGUiOiJvcHMifQ.a224kZI74rV96QqHDH6wXzhGvoeBxtcXZosXoa7rsKs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "postman-cloud:///1efd67b6-e033-4480-bca1-b89a066aac98"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/upload",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List-files-client-user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJ1c2VyX3R5cGUiOiJjbGllbnQifQ.COpKdSiK90EygCcfg3IxoiEpDBEA-uGFdfyO-r6OEuI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/files",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-Download-link-client-user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJ1c2VyX3R5cGUiOiJjbGllbnQifQ.COpKdSiK90EygCcfg3IxoiEpDBEA-uGFdfyO-r6OEuI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/download-file/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"download-file",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download-file-client-user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJ1c2VyX3R5cGUiOiJjbGllbnQifQ.COpKdSiK90EygCcfg3IxoiEpDBEA-uGFdfyO-r6OEuI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/download-file/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlX2lkIjoxLCJ1c2VyX2lkIjoyLCJub25jZSI6ImU2MWYyM2Q5LThkODItNDJhOC05MDdhLWY0MjQxODYyYTYzYSIsImV4cCI6MTczNzMwMzE5Mn0.F6kMEbn7JMrGbIEFZhvlqF0IKdfdWP3KYKX_X9wpie8",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"download-file",
+						"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlX2lkIjoxLCJ1c2VyX2lkIjoyLCJub25jZSI6ImU2MWYyM2Q5LThkODItNDJhOC05MDdhLWY0MjQxODYyYTYzYSIsImV4cCI6MTczNzMwMzE5Mn0.F6kMEbn7JMrGbIEFZhvlqF0IKdfdWP3KYKX_X9wpie8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
